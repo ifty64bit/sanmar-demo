@@ -1,0 +1,151 @@
+---
+
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sanmar Properties Ltd</title>
+    </head>
+    <body>
+        <nav class="sticky top-0 bg-primary-light-100 px-4 bg-opacity-90 z-50">
+            <img
+                src="/assets/mobile-logo.svg"
+                alt="Sanmar Properties Ltd"
+                class="w-20 h-20"
+            />
+        </nav>
+        <section
+            style="background-image: url('/assets/hero.jpg');"
+            class="bg-cover bg-center bg-no-repeat w-full h-dvh flex justify-center items-center bg-black bg-blend-soft-light bg-opacity-80"
+        >
+            <div class="text-center space-y-10">
+                <h1
+                    class="text-4xl font-bold tracking-tight text-primary-light-100 sm:text-6xl"
+                >
+                    WE DON’T JUST BUILD HOMES, WE PROMISE HEAVEN.
+                </h1>
+            </div>
+        </section>
+
+        <section
+            class="relative bg-primary-light-100/10 min-h-dvh w-full p-4 flex flex-col gap-4 justify-center items-center"
+        >
+            <div
+                class="absolute top-4 md:top-10 left-4 md:left-10 font-bold text-3xl text-primary-light-100"
+            >
+                History of Sanmar
+            </div>
+            <p
+                class="max-w-xl w-full text-xl leading-relaxed text-center mt-12 md:mt-0"
+            >
+                Founded in 1999, Sanmar Properties has emerged as a trailblazer
+                in the realms of residential, commercial, shopping mall
+                development, and land subdivision projects. The company, now
+                headquartered in Dhaka, has achieved rapid growth and
+                recognition thanks to its pioneering spirit, innovative
+                practices, and unwavering commitment to sustainable real estate
+                development. Sanmar is a world-class company, fully committed to
+                making life better. Through strategic collaborations with
+                renowned professionals spanning diverse fields of expertise and
+                a dedicated and passionate team, Sanmar consistently ensures the
+                timely and successful completion of its projects.
+            </p>
+            <div class="max-w-lg w-full flex gap-8 flex-wrap justify-center">
+                <div class="flex flex-col items-start">
+                    <span class="text-7xl font-medium text-primary-light-100"
+                        >2,500</span
+                    >
+                    <span>Ongoing Units</span>
+                </div>
+                <div class="flex flex-col items-start">
+                    <span class="text-7xl font-medium text-primary-light-100"
+                        >2,140</span
+                    >
+                    <span>Handed over Units</span>
+                </div>
+                <div class="flex flex-col items-start">
+                    <span class="text-7xl font-medium text-primary-light-100"
+                        >25</span
+                    >
+                    <span>Years In Service</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col justify-center p-8">
+            <h4 class="text-2xl mb-3 text-center text-gray-700">
+                Checkout the 3D Demo of Our Properties
+            </h4>
+
+            <div class="max-w-lg w-full mx-auto relative">
+                <model-viewer
+                    src="assets/models/Hotel.glb"
+                    class="w-full h-full aspect-square"
+                    auto-rotate="true"
+                    loading="eager"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    field-of-view="14.43deg"
+                    ar-scale="30 30 30"
+                    shadow-intensity="1"
+                    touch-action="pan-y"
+                >
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h4
+                    class="text-sm text-center text-gray-700 sticky bottom-0 left-0"
+                >
+                    Hotel
+                </h4>
+            </div>
+
+            <div class="max-w-lg w-full mx-auto relative">
+                <model-viewer
+                    src="assets/models/interior.glb"
+                    class="w-full h-full aspect-square"
+                    auto-rotate="true"
+                    loading="eager"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    shadow-intensity="1"
+                    touch-action="pan-y"
+                >
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h4 class="text-sm text-center text-gray-700">Interior</h4>
+            </div>
+
+            <div class="max-w-lg w-full mx-auto relative">
+                <model-viewer
+                    src="assets/models/fbr.glb"
+                    class="w-full h-full aspect-square"
+                    auto-rotate="true"
+                    loading="eager"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    field-of-view="20.67deg"
+                    ar-scale="fixed"
+                    ios-src="assets/models/fbr.usdz"
+                    poster="poster.webp"
+                    shadow-intensity="1"
+                >
+                    <div class="progress-bar hide" slot="progress-bar">
+                        <div class="update-bar"></div>
+                    </div>
+                </model-viewer>
+                <h4 class="text-sm text-center text-gray-700">Ferrari BR</h4>
+            </div>
+        </section>
+    </body>
+    <script
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+</html>
